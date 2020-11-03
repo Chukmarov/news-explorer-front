@@ -1,0 +1,70 @@
+.button_lead{
+  color: white;
+  outline: none;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+  padding: 0;
+  background:rgba(47, 113, 229, 1);
+
+  height: 64px;
+  max-width: 168px;
+  /* min-width: 160px; */
+  width: 100%;
+  border-radius: 100px;
+
+  justify-self: end;
+
+}
+
+.button_lead:hover{
+  background: rgba(52, 126, 255, 1);
+  transition: 0.5s;
+}
+
+.button_lead:active{
+  background: rgba(42, 101, 204, 1);
+}
+
+
+@media (min-width : 1439px) {
+
+}
+
+@media (min-width : 1279px) and (max-width : 1439px) {
+
+}
+
+@media (min-width : 1023px) and (max-width : 1279px) {
+
+}
+
+@media (min-width : 767px) and (max-width : 1023px) {
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .button_lead{
+    max-width: none;
+    height: 56px;
+  }
+}
+
+@media (min-width : 319px) and (max-width : 374px) {
+  .button_lead{
+    max-width: none;
+    height: 56px;
+  }
+}
+
+@media (max-width : 319px) {
+  .button_lead{
+    max-width: none;
+    height: 56px;
+  }
+}

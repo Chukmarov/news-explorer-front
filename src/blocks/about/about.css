@@ -1,0 +1,44 @@
+@import url('./__paragraph/about__paragraph.css');
+@import url('./__photo/about__photo.css');
+@import url('./__text-block/about__text-block.css');
+@import url('./__text-header/about__text-header.css');
+
+.about{
+  background: rgba(255, 255, 255, 1);
+  display: grid;
+  grid-template-columns: 40% auto;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  max-width: 1440px;
+  width: 100%;
+  padding-bottom: 80px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+@media (min-width : 767px) {
+  .about{
+    padding-top: 80px;
+    grid-column-gap: 56px;
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .about{
+    grid-template-columns: 40% auto;
+    padding-top: 40px;
+    padding-bottom: 61px;
+    grid-column-gap: 32px;
+  }
+}
+
+@media (max-width : 374px) {
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto;
+    padding-top: 32px;
+  }
+}

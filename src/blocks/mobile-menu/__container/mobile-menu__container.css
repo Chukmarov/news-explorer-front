@@ -1,0 +1,37 @@
+.mobile-menu__container{
+  display: grid;
+  align-items: center;
+
+  position: absolute;
+
+  top: 67px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: 0px;
+  opacity: 1;
+  transition: .5s;
+  transition-delay: .2s;
+  overflow: hidden;
+  background-color: #1A1B22;
+  border-radius:0 0 16px 16px;
+  min-width:320px;
+ }
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .mobile-menu__container {
+    top: 67px;
+  }
+}
+
+@media (min-width : 319px) and (max-width : 374px) {
+  .mobile-menu__container {
+    top: 57px;
+  }
+}
+
+@media (max-width : 319px) {
+  .mobile-menu__container {
+    top: 57px;
+  }
+}

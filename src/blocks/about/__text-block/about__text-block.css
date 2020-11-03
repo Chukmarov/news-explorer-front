@@ -1,0 +1,5 @@
+.about__text-block{
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+
+}

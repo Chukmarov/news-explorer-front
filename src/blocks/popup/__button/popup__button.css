@@ -1,0 +1,16 @@
+@import url(./_enter/popup__button\ _enter.css);
+@import url(./_registration/popup__button_registration.css);
+
+.popup__button{
+  outline: none
+}
+.popup__button:hover{
+  background: rgba(52, 126, 255, 1);
+}
+.popup__button:active{
+  background: rgba(42, 101, 204, 1);
+}
+.popup__button:disabled{
+  background: rgba(230, 232, 235, 1);
+  color:rgba(182, 188, 191, 1);
+}

@@ -1,0 +1,6 @@
+@import url(./_main/footer__menu-item_main.css);
+@import url(./_praktikum/footer__menu-item_praktikum.css);
+
+.footer__menu-item{
+  display: grid;
+}

@@ -1,0 +1,10 @@
+@import url(./_margin/mobile-menu__item_margin.css);
+
+.mobile-menu__item{
+  display: grid;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 56px;
+}

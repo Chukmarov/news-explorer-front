@@ -1,0 +1,11 @@
+@import url(./_black/mobile-menu__icon_black.css);
+@import url(./_white/mobile-menu__icon_white.css);
+
+
+.mobile-menu__icon{
+
+  background-image:cover;
+  height: 24px;
+  width: 24px;
+
+}

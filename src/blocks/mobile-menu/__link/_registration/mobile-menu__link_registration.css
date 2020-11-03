@@ -1,0 +1,11 @@
+.mobile-menu__link_registration{
+  border: 1px solid #fff; /* Белая рамка */
+  border-radius: 100px; /* Радиус скругления */
+  width: 288px;
+  height: 56px;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  align-self: center;
+}

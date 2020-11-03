@@ -1,0 +1,8 @@
+@import url(./_main/saved-news-header__menu-item_main.css);
+@import url(./_registration/saved-news-header__menu-item_registration.css);
+
+.saved-news-header__menu-item{
+  text-decoration: none;
+  color: rgba(26, 27, 34, 1);;
+
+}

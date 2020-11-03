@@ -1,0 +1,6 @@
+@import url(./_success/popup__anchor_success.css);
+
+.popup__anchor{
+  color: rgba(47, 113, 229, 1);
+  text-decoration: none;
+}

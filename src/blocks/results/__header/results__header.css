@@ -1,0 +1,31 @@
+@import url(./_margin-index/results__header_margin-index.css);
+@import url(./_margin-saved/results__header_margin-saved.css);
+
+.results__header{
+  font-family: Roboto Slab;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0px;
+
+}
+
+@media (min-width : 767px) {
+  .results__header{
+    font-size: 40px;
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .results__header{
+    font-size: 30px;
+  }
+}
+
+@media (max-width : 374px) {
+  .results__header{
+    font-size: 30px;
+  }
+}
+

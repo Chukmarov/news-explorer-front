@@ -1,0 +1,9 @@
+.popup__input_type-name{
+  padding:0px;
+  margin-top: 9px;
+
+}
+
+/* .popup__input_type-name:invalid + .popup__span_name{
+  visibility: visible;
+} */

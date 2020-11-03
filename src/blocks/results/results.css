@@ -1,0 +1,25 @@
+@import url(./__header/results__header.css);
+@import url(./__small-header-saved/results__small-header-saved.css);
+@import url(./__paragraph/results__paragraph.css);
+@import url(./_main/results_main.css);
+@import url(./_saved/results_saved.css);
+@import url(./__white-head-block/results__white-head-block.css);
+@import url(./_main-off/results_main-off.css);
+@import url(./_main-on/results_main-on.css);
+
+.results{
+  /* эта часть практически одинаковая у всех родственных блоков можно по умолнчаю копировать */
+
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-self: center;
+  margin: 0px;
+
+  max-width: 1440px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background-color: #E5E5E5;;
+
+}

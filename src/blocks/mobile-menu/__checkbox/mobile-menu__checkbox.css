@@ -1,0 +1,15 @@
+.mobile-menu__checkbox{
+  display: none;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+  height: 230px;
+  transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn > .mobile-menu__icon {
+  background-image: url('../../../images/close.png');
+  height: 24px;
+  width: 24px;
+}
+

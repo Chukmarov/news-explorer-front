@@ -1,0 +1,23 @@
+.popup__button_enter{
+  color: white;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+  padding: 0;
+  background:rgba(47, 113, 229, 1);
+
+  height: 64px;
+
+  width: 100%;
+  border-radius: 100px;
+
+  justify-self: center;
+
+  margin-top: 39px;
+
+}

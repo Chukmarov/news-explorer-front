@@ -1,0 +1,25 @@
+.footer__menu{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap:32px;
+  list-style-type: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin: 0px;
+  padding: 0px;
+
+  color: #FFFFFF;
+}
+
+@media (max-width : 767px){
+  .footer__menu{
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+    align-content: space-around;
+  }
+}

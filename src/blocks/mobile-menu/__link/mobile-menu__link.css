@@ -1,0 +1,13 @@
+@import url(./_registration/mobile-menu__link_registration.css);
+
+.mobile-menu__link{
+  text-decoration: none;
+  color: #fff;
+  display: grid;
+  align-self: center;
+}
+
+.mobile-menu__link:hover{
+  opacity: 0.7;
+  transition: 0.6s;
+}

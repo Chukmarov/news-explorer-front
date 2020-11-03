@@ -1,0 +1,13 @@
+.footer__links-item_facebook{
+  background-image: url('../../../../images/facebook-vector.svg');
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width : 767px) {
+  .footer__links-item_facebook{
+    clip-path: circle(9.5px at center);
+  }
+}

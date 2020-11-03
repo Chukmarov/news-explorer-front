@@ -1,0 +1,13 @@
+.header__navigation{
+  justify-self: end;
+  align-self: center;
+  display: none;
+ }
+
+
+@media (min-width : 768px){
+  .header__navigation{
+    display: inline;
+   }
+}
+

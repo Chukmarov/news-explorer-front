@@ -1,0 +1,24 @@
+.results-container__data-container{
+
+}
+
+@media (min-width : 767px) {
+  .results-container__data-container{
+    margin:20px 24px 24px
+
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .results-container__data-container{
+    margin: 16px 16px 16px;
+
+  }
+}
+
+@media (max-width : 374px) {
+  .results-container__data-container{
+    margin: 16px 16px 16px;
+
+  }
+}

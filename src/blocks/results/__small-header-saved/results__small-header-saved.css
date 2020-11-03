@@ -1,0 +1,35 @@
+.results__small-header-saved{
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: rgba(26, 27, 34, 0.5);
+
+}
+
+@media (min-width : 767px) {
+  .results__small-header-saved{
+    padding: 40px 0 0 0;
+    margin: 0px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .results__small-header-saved{
+    padding: 24px 0 0 0;
+    margin: 0px;
+  }
+}
+
+@media (max-width : 374px) {
+  .results__small-header-saved{
+    padding: 24px 0 0 0;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,40 @@
+.results-container__anchor-word{
+  order: -2;
+  display: grid;
+  align-items: center;
+  justify-self: start;
+  background-color: white;
+  border-radius: 8px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  max-height: 40px;
+  width: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+@media (min-width : 767px) {
+ .results-container__anchor-word{
+    margin: 24px 0px 0px 24px;
+   }
+ }
+
+@media (min-width : 374px) and (max-width : 767px) {
+ .results-container__anchor-word{
+     margin: 8px 0px 0px 8px;
+   }
+ }
+
+@media (max-width : 374px) {
+ .results-container__anchor-word{
+     margin:16px 0px 0px 16px;
+   }
+ }

@@ -1,0 +1,13 @@
+.results-container__href{
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: rgba(182, 188, 191, 1);
+
+  text-decoration:none;
+
+}

@@ -1,0 +1,46 @@
+@import url(./results-container__span_delete-news/results-container__span_delete-news.css);
+@import url(./results-container__span_message/results-container__span_message.css);
+
+.results-container__span{
+  order:-1;
+  z-index: 1;
+
+  display: grid;
+  align-items: center;
+  justify-self: end;
+  background-color: white;
+  border-radius: 8px;
+
+  max-height: 40px;
+  /* width: 182px; */
+  width: 100%;
+}
+
+@media (min-width : 950px) {
+  .results-container__span{
+  width: 182px;
+  }
+}
+
+@media (max-width : 950px) {
+  .results-container__span{
+    width: auto;
+  }
+}
+@media (min-width : 767px) {
+ .results-container__span{
+    margin-top: 24px;
+   }
+ }
+
+ @media (min-width : 374px) and (max-width : 767px) {
+ .results-container__span{
+    margin-top: 8px;
+   }
+ }
+
+ @media (max-width : 374px) {
+ .results-container__span{
+    margin-top:16px;
+   }
+ }

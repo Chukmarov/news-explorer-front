@@ -1,0 +1,7 @@
+.footer__links-item_github{
+  background-image: url('../../../../images/github-vector.svg');
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

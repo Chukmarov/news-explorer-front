@@ -1,0 +1,25 @@
+.results-container__checkbox-label{
+  justify-self: end;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+
+}
+
+@media (min-width : 767px) {
+ .results-container__checkbox-label{
+    padding: 24px 24px 0px 0px;
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+ .results-container__checkbox-label{
+    padding: 8px 8px 0px 0px;
+  }
+}
+
+@media (max-width : 374px) {
+ .results-container__checkbox-label{
+    padding:16px 16px 0px 0px;
+  }
+}

@@ -1,0 +1,17 @@
+.saved-news-header__menu{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap:32px;
+  list-style-type: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin: 0px;
+  padding: 0px;
+
+  color: rgba(26, 27, 34, 1);
+}

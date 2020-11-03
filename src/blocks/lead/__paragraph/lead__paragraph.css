@@ -1,0 +1,44 @@
+.lead__paragraph{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 545px;
+
+  color: #FFFFFF;
+
+  margin: 32px 0px 0px;
+  padding: 0px;
+}
+
+@media (min-width : 1439px) {
+}
+
+@media (min-width : 1279px) and (max-width : 1439px) {
+}
+
+@media (min-width : 1023px) and (max-width : 1279px) {
+}
+
+@media (min-width : 767px) and (max-width : 1023px) {
+}
+
+@media (min-width : 319px) and (max-width : 767px) {
+  .lead__paragraph{
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 452px;
+
+    margin: 16px 0px 0px;
+   }
+}
+
+@media (max-width : 319px) {
+  .lead__paragraph{
+    font-size: 18px;
+    line-height: 24px;
+
+    margin: 16px 0px 0px;
+   }
+}

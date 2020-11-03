@@ -1,0 +1,50 @@
+.button_results{
+  outline: none;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  border: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 1);
+
+  height: 64px;
+  max-width: 288px;
+
+  width: 100%;
+  border-radius: 80px;
+
+  justify-self: center;
+  margin: 64px 0px 80px 0px;
+
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .button_results{
+    max-width: none;
+    height: 56px;
+    max-width: 240px;
+
+    margin: 24px 0px 40px 0px;
+  }
+}
+
+@media (max-width : 374px) {
+  .button_results{
+    max-width:288px;
+    height: 56px;
+
+    margin: 15px 0px 32px 0px;
+  }
+}
+
+.button_results:hover{
+  background: rgba(230, 232, 235, 1);
+  transition: 0.5s;
+}

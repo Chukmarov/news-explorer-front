@@ -1,0 +1,17 @@
+@import url(./results-container__checkbox-icon_saved/results-container__checkbox-icon_saved.css);
+@import url(./results-container__checkbox-icon_trash/results-container__checkbox-icon_trash.css);
+
+.results-container__checkbox-icon{
+  display:block;
+  margin:0;
+  padding:0;
+
+  max-width: 40px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+
+  border-radius: 8px;
+  z-index: 1;
+}
+

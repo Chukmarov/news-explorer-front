@@ -1,0 +1,31 @@
+.results__paragraph{
+  font-family: Roboto;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0px;
+
+}
+
+
+@media (min-width : 767px) {
+  .results__paragraph{
+    font-size: 18px;
+    padding: 30px 0 56px 0;
+  }
+}
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .results__paragraph{
+    padding: 16px 0 32px 0;
+  }
+}
+
+@media (max-width : 374px) {
+  .results__paragraph{
+    padding: 16px 0 32px 0;
+  }
+}

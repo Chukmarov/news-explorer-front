@@ -1,0 +1,29 @@
+
+ .background-image{
+  max-width: 1440px;
+  min-width:320px;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  background-image: url('../../images/background-phone-1400x576.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  z-index: -1;
+ }
+
+
+@media (min-width : 477px) and (max-width : 767px) {
+  .background-image {
+    background-image: url('../../images/background-phone-768x400.jpg');
+  }
+}
+
+@media (max-width : 476px) {
+  .background-image {
+    background-image: url('../../images/background-phone-320x536.jpg');
+    background-size:cover;
+    max-height: 536px;
+  }
+}

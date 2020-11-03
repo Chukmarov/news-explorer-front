@@ -1,0 +1,16 @@
+.results-container__span_message{
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.results-container__checkbox-label:hover + .results-container__span_message{
+  opacity: 1;
+}

@@ -1,0 +1,11 @@
+.footer__navigation{
+  display: grid;
+  grid-template-columns: auto auto;
+ }
+
+
+@media (max-width : 767px){
+  .footer__navigation{
+  order:-1;
+  }
+}

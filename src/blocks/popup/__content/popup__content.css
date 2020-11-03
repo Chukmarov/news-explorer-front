@@ -1,0 +1,16 @@
+.popup__content {
+  width: 100%;
+  max-width: 430px;
+
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px 28px;
+
+  align-self: center;
+  justify-self: center;
+
+  display:grid;
+
+}

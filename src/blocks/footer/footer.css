@@ -1,0 +1,32 @@
+@import url(./__container/footer__container.css);
+@import url(./__menu-item/footer__menu-item.css);
+@import url(./__menu/footer__menu.css);
+@import url(./__navigation/footer__navigation.css);
+@import url(./__links-block/footer__links-block.css);
+@import url(./__links-item/footer__links-item.css);
+
+.footer {
+  background-color: rgba(255, 255, 255, 1);
+
+  max-width: 1440px;
+  width: 100%;
+
+  min-height: 80px;
+
+  display: grid;
+  grid-template-columns: 85.55% ;
+  justify-content: center;
+  justify-self: center;
+
+
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@media  (max-width :  767px) {
+  .footer {
+    min-height: 132px;
+  }
+}
+

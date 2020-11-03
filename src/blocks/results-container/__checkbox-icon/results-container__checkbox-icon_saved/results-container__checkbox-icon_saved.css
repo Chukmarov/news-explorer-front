@@ -1,0 +1,11 @@
+.results-container__checkbox-icon_saved{
+  background-image: url('../../../../images/flag_normal.jpg');
+}
+
+.results-container__checkbox-icon_saved:hover{
+  background-image: url('../../../../images/flag_hover.png');
+}
+
+.results-container__checkbox:checked ~ .results-container__checkbox-label > .results-container__checkbox-icon_saved{
+  background-image: url('../../../../images/flag_marked.png');
+}

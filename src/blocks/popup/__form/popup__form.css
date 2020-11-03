@@ -1,0 +1,6 @@
+@import url(./_enter/popup__form_enter.css);
+
+.popup__form {
+  display: grid;
+  margin-top: 22px;
+ }

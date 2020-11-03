@@ -1,0 +1,61 @@
+@import url(./__header/results-container__header.css);
+@import url(./__href/results-container_href.css);
+@import url(./__checkbox/results-container__checkbox.css);
+@import url(./__checkbox-label/results-container__checkbox-label.css);
+@import url(./__checkbox-icon/results-container__checkbox-icon.css);
+@import url(./__image-container/results-container__image-container.css);
+@import url(./__item/results-container__item.css);
+@import url(./__paragraph/results-container__paragraph.css);
+@import url(./__time/results-container__time.css);
+@import url(./__data-container/results-container__data-container.css);
+@import url(./__span/results-container__span.css);
+@import url(./_main/results-container_main.css);
+@import url(./_saved/results-container_saved.css);
+@import url(./__anchor-word/results-container__anchor-word.css);
+@import url(./__image/results-container__image.css);
+
+.results-container{
+  display: grid;
+  justify-items:center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width : 950px) {
+  .results-container{
+    margin:64px 0 24px;
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 16px;
+  }
+}
+
+@media (min-width : 500px) and (max-width : 950px) {
+  .results-container{
+    margin: 32px 0 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media (min-width : 0px) and  (max-width : 500px)  {
+  .results-container{
+    margin: 24px 0 0;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+}
+
+
+@media (min-width : 374px) and (max-width : 767px) {
+  .results-container{
+    margin-bottom:24px;
+  }
+}
+
+@media (max-width : 374px) {
+  .results-container{
+    margin-bottom: 15px;
+  }
+}

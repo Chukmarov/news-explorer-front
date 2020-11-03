@@ -1,0 +1,12 @@
+.header__menu-item_exit-white{
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 100px;
+  min-width: 112px;
+  min-height: 48px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+
+  grid-template-columns: auto auto;
+}

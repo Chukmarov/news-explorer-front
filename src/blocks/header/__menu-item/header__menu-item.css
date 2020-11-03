@@ -1,0 +1,19 @@
+@import url(./_main/header__menu-item_main.css);
+@import url(./_registration/header__menu-item_registration.css);
+@import url(./_black/header__menu-item_black.css);
+@import url(./_white/header__menu-item_white.css);
+@import url(./_exit-black/header__menu-item_exit-black.css);
+@import url(./_exit-white/header__menu-item_exit-white.css);
+@import url(./_display-none/header__menu-item_dispay-none.css);
+
+.header__menu-item{
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.header__menu-item:hover{
+  opacity: 0.5;
+  transition: 0.6s;
+}

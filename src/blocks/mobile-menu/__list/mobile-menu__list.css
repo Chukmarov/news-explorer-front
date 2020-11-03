@@ -1,0 +1,11 @@
+.mobile-menu__list{
+  transition: .5s;
+  transition-delay: .5s;
+  list-style: none;
+  padding-left: 0;
+  margin:0px;
+  display: grid;
+  grid-template-rows: 45px 45px 56px;
+  grid-row-gap: 22px;
+
+}

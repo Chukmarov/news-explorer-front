@@ -1,0 +1,17 @@
+.results-container__checkbox-icon_trash{
+  background-image: url('../../../../images/flag_normal.jpg');
+}
+
+.results-container__checkbox-icon_trash:hover{
+  background-image: url('../../../../images/flag_hover.png');
+}
+
+.results-container__checkbox:checked ~ .results-container__checkbox-label > .results-container__checkbox-icon_trash{
+  background-image: url('../../../../images/trash-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.results-container__checkbox:checked ~ .results-container__checkbox-label > .results-container__checkbox-icon_trash:hover{
+  background-image: url('../../../../images/trash-icon_hover.png');
+}

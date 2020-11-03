@@ -1,0 +1,8 @@
+.footer__links-block{
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-content: center;
+  justify-content: end;
+  grid-column-gap: 28px;
+
+}

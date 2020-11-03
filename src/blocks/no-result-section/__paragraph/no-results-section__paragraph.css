@@ -1,0 +1,13 @@
+.no-results-section__paragraph{
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  color: rgba(182, 188, 191, 1);
+
+  margin: 16px 0 0 0;
+}

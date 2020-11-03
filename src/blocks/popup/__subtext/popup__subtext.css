@@ -1,0 +1,11 @@
+.popup__subtext{
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  align-self: center;
+}

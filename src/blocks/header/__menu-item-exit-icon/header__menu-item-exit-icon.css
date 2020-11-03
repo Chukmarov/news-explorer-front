@@ -1,0 +1,9 @@
+@import url(./_black/header__menu-item-exit-icon_black.css);
+@import url(./_white/header__menu-item-exit-icon_white.css);
+
+.header__menu-item-exit-icon{
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

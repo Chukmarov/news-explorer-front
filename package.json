@@ -13,12 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/Chukmarov/news-explorer-front"
   },
-  "author": "RomanChukmarov\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D Chukmarov",
+  "author": "RomanChukmarov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Chukmarov/news-explorer-front/issues"
   },
-  "homepage": "https://Chukmarov.github.io/news-explorer-front/",
+  "homepage": "https://chukmarov.github.io/news-explorer-front",
   "devDependencies": {
     "@babel/cli": "~7.10.4",
     "@babel/core": "~7.10.4",

@@ -61,23 +61,43 @@ export default class Dom {
   createNews(item, resultsContainerItem, keyWords, pageSwitch, dateParse){
 
     if(pageSwitch == "main"){
-     const dateToPrint = dateParse(item.publishedAt);
-      return resultsContainerItem.innerHTML=`
-      <div data-link="${item.url}" data-title="${item.title}" data-author="${item.author}" data-keyword="${keyWords}" data-text="${item.description}" data-date="${item.publishedAt}" data-source="${item.source.name}" data-image="${item.urlToImage}" class ="results-container__image-container results-container__image-container_first">
-        <img src ="${item.urlToImage}" alt = "" class = results-container__image>
-        <input class = "results-container__checkbox"  type="checkbox" id="${item.url}">
-        <label class="results-container__checkbox-label" for="${item.url}" >
-         <span class = "results-container__checkbox-icon results-container__checkbox-icon_saved"></span>
-        </label>
-          <span class="results-container__span results-container__span_message">Войдите чтобы сохранять статьи</span>
-      </div>
-      <div class ="results-container__data-container">
-        <time class = "results-container__time" datetime="${item.publishedAt}">${dateToPrint}</time>
-        <h3 class ="results-container__header">${item.title}</h3>
-        <p class ="results-container__paragraph">${item.description}</p>
-        <a class ="results-container__href" href="${item.url}">${item.source.name}</a>
-      </div>
-      `
+      if(Boolean(localStorage.token)){
+        const dateToPrint = dateParse(item.publishedAt);
+        return resultsContainerItem.innerHTML=`
+        <div data-link="${item.url}" data-title="${item.title}" data-author="${item.author}" data-keyword="${keyWords}" data-text="${item.description}" data-date="${item.publishedAt}" data-source="${item.source.name}" data-image="${item.urlToImage}" class ="results-container__image-container results-container__image-container_first">
+          <img src ="${item.urlToImage}" alt = "" class = results-container__image>
+          <input class = "results-container__checkbox"  type="checkbox" id="${item.url}">
+          <label class="results-container__checkbox-label" for="${item.url}" >
+          <span class = "results-container__checkbox-icon results-container__checkbox-icon_trash"></span>
+          </label>
+          <span class="results-container__span results-container__span_delete-news">Убрать из сохраненных</span>
+        </div>
+        <div class ="results-container__data-container">
+          <time class = "results-container__time" datetime="${item.publishedAt}">${dateToPrint}</time>
+          <h3 class ="results-container__header">${item.title}</h3>
+          <p class ="results-container__paragraph">${item.description}</p>
+          <a class ="results-container__href" href="${item.url}">${item.source.name}</a>
+        </div>
+        `
+      }else{
+        const dateToPrint = dateParse(item.publishedAt);
+        return resultsContainerItem.innerHTML=`
+        <div data-link="${item.url}" data-title="${item.title}" data-author="${item.author}" data-keyword="${keyWords}" data-text="${item.description}" data-date="${item.publishedAt}" data-source="${item.source.name}" data-image="${item.urlToImage}" class ="results-container__image-container results-container__image-container_first">
+          <img src ="${item.urlToImage}" alt = "" class = results-container__image>
+          <input class = "results-container__checkbox"  type="checkbox" id="${item.url}">
+          <label class="results-container__checkbox-label" for="${item.url}" >
+           <span class = "results-container__checkbox-icon results-container__checkbox-icon_saved"></span>
+          </label>
+            <span class="results-container__span results-container__span_message">Войдите чтобы сохранять статьи</span>
+        </div>
+        <div class ="results-container__data-container">
+          <time class = "results-container__time" datetime="${item.publishedAt}">${dateToPrint}</time>
+          <h3 class ="results-container__header">${item.title}</h3>
+          <p class ="results-container__paragraph">${item.description}</p>
+          <a class ="results-container__href" href="${item.url}">${item.source.name}</a>
+        </div>
+        `
+      }
     }
 
     if(pageSwitch == "second"){
@@ -120,7 +140,7 @@ export default class Dom {
     }
   }
 
-  printSavedNews(newsArray, newsCounter, saveDeleteNewsClicker, baseUrl, pageSwitch,dateParse){
+  printSavedNews(newsArray, newsCounter, saveDeleteNewsClicker, baseUrl, pageSwitch, dateParse){
     for ( let i = 0; i <= newsCounter; i++){
       if(i >= newsArray.length){
         break;
@@ -137,7 +157,7 @@ export default class Dom {
     }
   }
 
-  printAddNews(newsArray, newsCounter, keyWords, pageSwitch, addButton, dateParse){
+  printAddNews(newsArray, newsCounter, keyWords, pageSwitch, addButton, dateParse, saveDeleteNewsClicker, baseUrl){
     let newsCounterPlusThree = newsCounter + 3;
     newsCounter++;
     for ( newsCounter; newsCounter <= newsCounterPlusThree; newsCounter++){
@@ -149,6 +169,10 @@ export default class Dom {
       resultsContainerItem.classList.add('results-container__item');
       this.createNews(newsArray[newsCounter], resultsContainerItem, keyWords, pageSwitch, dateParse);
       this.resultsContainer.appendChild(resultsContainerItem);
+      const lastElementOfResults = this.resultsContainer.lastElementChild.querySelector('.results-container__checkbox-label');
+      lastElementOfResults.addEventListener('click', (event)=> {
+        saveDeleteNewsClicker(event, lastElementOfResults.parentElement, baseUrl);
+      });
     }
   }
 
@@ -179,5 +203,4 @@ export default class Dom {
 
 
   }
-
 }

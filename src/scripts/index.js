@@ -247,7 +247,7 @@ const pageFunctional = () => {
 
   //подгрузка дополнительных карт к просмотру
   resultsButton.addEventListener('click',() =>{
-    dom.printAddNews(foundNews, newsCounter, keyWords, pageSwitch, resultsButton, utils.dateParse)
+    dom.printAddNews(foundNews, newsCounter, keyWords, pageSwitch, resultsButton, utils.dateParse, api.saveDeleteNewsClicker, baseUrl)
     newsCounter = newsCounter + 3;
   })
   //отрисовка хедера страницы

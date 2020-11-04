@@ -13,7 +13,6 @@ export default class Api {
   }
 
   pushUserInfoToServer(obj) {
-
     return fetch(`${this.baseUrl}/signup`, {
       method: 'POST',
       headers: {
@@ -26,10 +25,11 @@ export default class Api {
       })
     })
     .then((res) => {
-      return this.apiErrorReturn(res);
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      }
+      return res.json();
     })
-    .then(res => res.json())
-
   }
 
   enterToSite(obj){
@@ -44,7 +44,12 @@ export default class Api {
         password: `${obj.userInfoPassword}`
       })
     })
-    .then(res => res.json())
+    .then((res) =>{
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      }
+      return res.json();
+    })
     .then((data) => {
         // сохраняем токен
         localStorage.setItem('token', data.token);
@@ -59,10 +64,12 @@ export default class Api {
       },
       credentials: 'include',
     })
-    .then((res) => {
-      return this.apiErrorReturn(res);
+    .then((res) =>{
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      }
+      return res.json();
     })
-    .then(res => res.json())
   }
 
   saveDeleteNewsClicker(event, el, baseUrl){
@@ -84,7 +91,12 @@ export default class Api {
           image:`${el.dataset.image}`
         })
       })
-      .then(res => res.json())
+      .then((res) =>{
+        if (!res.ok) {
+          return Promise.reject(`Ошибка: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((res) =>{
         event.target.parentElement.parentElement.setAttribute('data-_id', `${res.data._id}`);
       })
@@ -104,17 +116,23 @@ export default class Api {
         body: JSON.stringify({
         })
       })
-      .then(res => res.json())
+      .then((res) =>{
+        if (!res.ok) {
+          return Promise.reject(`Ошибка: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((res) =>{
         event.target.parentElement.parentElement.removeAttribute('data-_id');
+        event.target.parentElement.parentElement.parentElement.remove();
       })
       .catch((err) =>{
         console.log(err);
-        if (!event.target.parentElement.previousElementSibling.checked){
-        event.target.previousElementSibling.checked=true;
-        }else{
-        event.target.previousElementSibling.checked=false;
-        }
+        // if (!event.target.parentElement.previousElementSibling.checked){
+        // event.target.previousElementSibling.checked=true;
+        // }else{
+        // event.target.previousElementSibling.checked=false;
+        // }
       })
     }
   }
@@ -127,10 +145,12 @@ export default class Api {
       },
       credentials: 'include',
     })
-    .then((res) => {
-      return this.apiErrorReturn(res);
+    .then((res) =>{
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      }
+      return res.json();
     })
-    .then(res => res.json())
   }
 
 }

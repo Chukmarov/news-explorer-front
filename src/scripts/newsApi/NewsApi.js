@@ -17,8 +17,11 @@ export default class newsApi {
     const req = new Request(url);
     //отправка запроса
    return fetch(req)
-    .then((res) => {
-      return res.json();
+   .then((res) =>{
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      }
+    return res.json();
     })
     .then((res) => {
       return res.articles;

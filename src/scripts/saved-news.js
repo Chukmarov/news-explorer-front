@@ -77,8 +77,8 @@ const pageFunctional = () => {
         if (res.data.length == 0) {
           dom.headerParagraphSavedPaint(userInfo, {}, {}, resultsHeaderSaved, {}, resultsParagraph)
           return
-        }
-        //если карточки пришли считаем кол-во уникальных ключевых слов
+        }else{
+                  //если карточки пришли считаем кол-во уникальных ключевых слов
         res.data.forEach((item) => {
           uniqueKeyWords.add(item.keyword)
         });
@@ -120,18 +120,20 @@ const pageFunctional = () => {
         dom.printSavedNews(res.data, newsCounter, api.saveDeleteNewsClicker, baseUrl, pageSwitch, utils.dateParse);
         //запускам отрисовку шапки
         dom.headerParagraphSavedPaint(userInfo, foundNews, uniqueKeyWords, resultsHeaderSaved, newObj, resultsParagraph)
+        }
+
       });
   }
   //подгрузка дополнительных карт к просмотру
   resultsButton.addEventListener('click', () => {
-    dom.printAddNews(foundNews, newsCounter, keyWords, pageSwitch, resultsButton, utils.dateParse)
+    dom.printAddNews(foundNews, newsCounter, keyWords, pageSwitch, resultsButton, utils.dateParse, api.saveDeleteNewsClicker, baseUrl)
     newsCounter = newsCounter + 3;
   });
+
 
   headerPaint();
   loadingSavedNews();
   //отрисовка заголовка и ключевых слов
-
 
 };
 
